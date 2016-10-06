@@ -1,3 +1,3 @@
 rand.rb
 
-test1
+test12
