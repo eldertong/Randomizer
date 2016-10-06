@@ -3,6 +3,7 @@ require_relative "rand.rb"
 
 class TestIsbn <Minitest::Test
 	def test_empty_array_returns_array
-		isbn = {}
-		assert_equal({}, randomize(name))
+		array = name_array(["bil", "bob", "sally", "suzy"])
+		assert_equal(2, array.count)
 	end
+end

@@ -1,3 +1,3 @@
 rand.rb
 
-test12
+["lyle", "jacob", "jeremy", "ysabele", "lotfi", "cyndi", "don", "stephanie", "susan", "adam", "mike", "maxx", "john"]
