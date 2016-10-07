@@ -5,15 +5,14 @@
 def name_array(array)
     group_size = 2
     number_of_elements = array.length
-    variable_number_of_array = number_of_elements / 2
+    number_of_arrays = number_of_elements / group_size.to_i
     shuffled = array.shuffle
     sliced = shuffled.each_slice(group_size.to_i).to_a
     if shuffled.length % 2 == 1
-         result = sliced[-2] << sliced[-1][0]
+         sliced[-2] << sliced[-1][0]
+         sliced.delete_at(-1)
      else
-         result = sliced
+         sliced
     end
-    result
+    sliced
 end
-
-# a1.push(*a2) 
