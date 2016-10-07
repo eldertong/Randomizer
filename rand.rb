@@ -7,10 +7,11 @@ def name_array(array)
     shuffled = array.shuffle
     sliced = shuffled.each_slice(2).to_a
     if shuffled.length % 2 == 1
-        sliced[-2] << sliced[-1][0]
-    else
-        sliced
+         result = sliced[-2] << sliced[-1][0]
+     else
+         result = sliced
     end
-    sliced
+    result
 end
 
+# a1.push(*a2) 
