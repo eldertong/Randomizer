@@ -1,13 +1,13 @@
 require_relative 'rand.rb'
 require 'sinatra'
-require_relative "rand.rb"
 
 get '/' do
     erb :get_names
 end
 
 post '/names' do
-    array = params[:user_name1]
+    arr = 
+    arr = params[:user_name1, :user_name2]
     result = name_array(array)
     result.to_s
 end
