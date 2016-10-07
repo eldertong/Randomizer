@@ -10,4 +10,8 @@ class TestIsbn <Minitest::Test
 		array = name_array(["marv", "bill", "bob", "sally", "suzy"])
 		assert_equal(2, array.count)
 	end
+	def test_all_names_returns_6
+		array = name_array(["lyle", "jacob", "jeremy", "ysabele", "lotfi", "cyndi", "don", "stephanie", "susan", "adam", "mike", "maxx", "john"])
+		assert_equal(6, array.count)
+	end
 end
