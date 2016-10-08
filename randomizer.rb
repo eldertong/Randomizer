@@ -7,7 +7,7 @@ get '/' do
 end
 
 post '/names' do
-    array = params[:user_name1]
+    array = params[:user_name]
     result = name_array(array)
     result.to_s
 end
