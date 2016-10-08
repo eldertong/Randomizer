@@ -6,10 +6,11 @@ get '/' do
 end
 
 post '/names' do
-    arr = 
-    arr = params[:user_name1, :user_name2]
+    array = params[:user_name]
+    # array << params[:user_name1]
+    # array << params[:user_name2]
     result = name_array(array)
-    result.to_s
+    result
 end
 
 # , :user_name3, :user_name4, :user_name5, :user_name6, :user_name7, :user_name8, :user_name9, :user_nameX, :user_nameX1, :user_nameX2, :user_nameX3
