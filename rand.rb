@@ -7,12 +7,12 @@ def name_array(array)
     # number_of_elements = array.length
     # number_of_arrays = number_of_elements / group_size.to_i
     shuffled = array.shuffle
-    sliced = shuffled.each_slice(group_size.to_i)
+    sliced = shuffled.each_slice(group_size).to_a
     if shuffled.length % 2 == 1
          sliced[-2] << sliced[-1][0]
          sliced.delete_at(-1)
      else
          sliced
     end
-    sliced.to_a
+    sliced
 end
