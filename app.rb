@@ -7,7 +7,8 @@ end
 
 post '/names' do
     array = params[:user_name]
-    name_array(array)
+    results = name_array(array)
+    results
 end
 
 

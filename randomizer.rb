@@ -1,6 +1,6 @@
 require_relative 'rand.rb'
 require 'sinatra'
-require_relative "rand.rb"
+
 
 get '/' do
     erb :get_names

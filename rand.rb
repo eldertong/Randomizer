@@ -14,5 +14,5 @@ def name_array(array)
      else
          sliced
     end
-    sliced
+    sliced.to_a
 end
