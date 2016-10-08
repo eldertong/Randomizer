@@ -7,12 +7,12 @@ end
 
 post '/names' do
     array = params[:user_name]
-    # array << params[:user_name1]
-    # array << params[:user_name2]
-    result = name_array(array)
-    result
+    name_array(array)
 end
 
+
+# array << params[:user_name1]
+    # array << params[:user_name2]
 # , :user_name3, :user_name4, :user_name5, :user_name6, :user_name7, :user_name8, :user_name9, :user_nameX, :user_nameX1, :user_nameX2, :user_nameX3
 #	<input type = "text" name = "user_name2">
 	# <br>
